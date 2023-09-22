@@ -4,32 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Insanus Ludos</title>
 </head>
 <body>
     <!--Header
     -->
    <header class="nav-header">
-    <a href="#" class="nav-logo"></a>
 
-    <!--Menu-->
-    <nav>
-        <ul class="mav-menu-list">
+    <a href="/index.html" class="nav-logo">Icono</a>
+
+    <!--Menu/Barra lateral(en patallas de menores tamaños)-->
+    <nav class="nav-menu">
+        <ul class="nav-menu-list">
             <li class="nav-menu-item">
                 <a href="#" class="nav-menu-categories-link">Categorias</a>
+                <ul class="nav-menu-inside">
+                    <li class="">
+                        <a href="#" class="menu__link menu__link--inside">Accion</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="menu__link menu__link--inside">Aventura</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="menu__link menu__link--inside">Carreras</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="menu__link menu__link--inside">Arcade </a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="menu__link menu__link--inside">Deportes</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="menu__link menu__link--inside">Estrategia</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="menu__link menu__link--inside">Rol</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="menu__link menu__link--inside">Terror</a>
+                    </li>
+                </ul>
             </li>
-            <li class="nav-menu-item"><a href="#" class="nav-menu-item-link"></a></li>
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-item-link">Ventas</a>
+            </li>
+            <li class="nav-menu-list">
+                <a href="#" class="nav-menu-item-link">Contactos</a>
+            </li>
+            <li class="nav-menu-list">
+                <a href="#" class="nav-menu-item-link">Ofertas</a>
+            </li>
         </ul>
     </nav>
+    <a href="#" title="Carrito" class="nav-cart nav-cart-empty modeless-box-trigger" id="nav-cart"> 🛒</a>
    </header>
+   <!--Iconos-->
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+   <!--script basico para la conexcion del html
+   -->
+
+   <script src="/js/index.js"></script>
 
 
-    <!--More Info-->
+    <!--More Info/para bromear-->
     <div>
-       <button id="nav-footer-access-content" aria-expanded="false">Mas Informacion
-        <i class="nav-icon-chevron-up"></i>
-
-       </button>
+       <button id="nav-footer-access-content" >Mas Informacion<i class="nav-icon-chevron-up"></i></button>
        <div class="nav-footer-access-content">
             <img src="#" alt="Imagen troleadora">
        </div>
