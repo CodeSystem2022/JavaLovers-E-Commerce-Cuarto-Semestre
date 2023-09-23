@@ -5,7 +5,29 @@
     --green-osc:rgb(35, 114, 35);
     --gris-claro:rgb(195, 195, 195);
     --green-fluor:rgb(2, 227, 0);
+}
+
+/* Aca*/
 
 
+
+.buttom-troll{
+    display: block;
+    color: white;
+
+    background-color:var(--dark-claro);
+    text-decoration: none;
+    font-weight: bold;
+    width: 300px;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 0.6rem;
+    text-align: center;
+    border: 2px solid;
+    border-color: var(--dark);
+}
+.buttom-troll:hover{
+    background-color: var(--gris-claro);
+    border-color: var(--green-fluor);
 
 }
