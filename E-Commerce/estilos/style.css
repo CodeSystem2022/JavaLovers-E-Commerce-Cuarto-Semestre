@@ -7,7 +7,48 @@
     --green-fluor:rgb(2, 227, 0);
 }
 
-/* Aca*/
+body{
+    font-family: 'Sofia Sans';
+    border: 5px;
+    padding: 5px;
+    margin: 10px;
+    background-color: var(--dark);
+    box-sizing: border-box;
+}
+
+.nav-header{
+    display: grid;
+    grid-template-columns: 10% 35% 50% 5%; /*modificar valores de las columnas */
+    padding-bottom: 6rem;
+
+}
+
+.nav-logo{
+    grid-column: 1/2;
+    
+    
+
+}
+.Logo{
+    object-fit: cover;  
+    
+}
+
+.nav-menu{
+    grid-column: 3/4;
+    
+}
+.nav-menu-list{
+
+}
+
+.nav-menu-item{
+
+}
+
+.nav-cart{
+    grid-column: 4/5;
+}
 
 
 
