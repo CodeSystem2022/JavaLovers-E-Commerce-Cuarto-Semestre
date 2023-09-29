@@ -1,3 +1,5 @@
+
+/*Paleta de colores*/
 :root{
     --dark:rgb(1, 1, 1);
     --gris:rgb(112, 117, 112);
@@ -5,57 +7,147 @@
     --green-osc:rgb(35, 114, 35);
     --gris-claro:rgb(195, 195, 195);
     --green-fluor:rgb(2, 227, 0);
-}
 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Sofia Sans';
     border: 5px;
     padding: 5px;
     margin: 10px;
-    background-color: var(--dark);
-    box-sizing: border-box;
+    background-color: rgba(230, 200, 0, 0.929);/*indefinido por el momento*/
 }
-
 .nav-header{
+    height: 7rem;
     display: grid;
     grid-template-columns: 10% 35% 50% 5%; /*modificar valores de las columnas */
-    padding-bottom: 6rem;
+    border-radius: 1rem;
+    background-color: var(--dark);
+    
 
 }
-
-.nav-logo{
+.nav-log{
     grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+    display: flex;
     
-    
-
-}
-.Logo{
-    object-fit: cover;  
     
 }
-
+.nav-logo{
+    width: 100%;
+    padding-top: 2rem;/*como no se centraba como quiera lo centre a mi manera */
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+    
+       
+}
+.nav-logo-img{
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+    /*z-index: 0;*/
+    object-fit: cover;
+    
+}
 .nav-menu{
     grid-column: 3/4;
+    transition: transform .5s;
+    
     
 }
 .nav-menu-list{
+    height: 100%;
+    width: 90%;
+    max-width: 1200px;
+    transition: transform .5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 0 auto;
+    
+    
 
 }
-
 .nav-menu-item{
-
+    padding-top: 1rem;
+    list-style: none;
+    position: relative;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+.nav-menu-item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(90deg);
+}
+.nav-menu-categories-link{
+    padding: 1rem;
+    border: 1rem;
+    text-decoration: none;
+    color: var(--green-fluor)
+}
+.nav-menu-categories-link:hover{
+    background-color: var(--dark-claro);
+    border-radius: 1rem;
+    position: relative;
+}
+.nav-menu-item-link{
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--green-fluor);
+}
+.nav-menu-item-link:hover{
+    background-color: var(--dark-claro);
+    border-radius: 1rem;
+}
+.menu_arrow{
+    transform: var(--transform);
+    transition: transform 0.5s;
+}
+/*est. de categorias*/
+.nav-menu-inside{
+    border-radius: 0.5rem;
+    position: fixed;
+    list-style: none;
+    background-color: var(--green-osc);
+    clip-path: var(--clip);
+    transition: transform 0.5s;
+    
+}
+/*est. de categorias*/
+.nav-menu_inside-item{
+    display: flex; 
+}
+/*est. de categorias*/
+.menu_link_menu_link-inside{
+    color: var(--dark);
+    width:100%;
+    padding: 1rem 2.5rem 1rem 1.5rem;
+    text-decoration: none;
+    
+    
+}
+/*est. de categorias*/
+.menu_link_menu_link-inside:hover{
+    color: yellow;
+    background-color: rgb(21, 23, 38);
+    
 }
 
 .nav-cart{
     grid-column: 4/5;
+    padding: 1rem;
+    padding-top: 1.9rem;
 }
-
-
 
 .buttom-troll{
     display: block;
     color: white;
-
     background-color:var(--dark-claro);
     text-decoration: none;
     font-weight: bold;
@@ -72,3 +164,6 @@ body{
     border-color: var(--green-fluor);
 
 }
+/*
+
+*/
