@@ -127,3 +127,12 @@ body{
     padding: 1rem 2.5rem 1rem 1.5rem;
     text-decoration: none;
 }
+/*est. de categorias*/
+.menu_link_menu_link-inside:hover{
+    display: flex;
+    position: relative;
+    color: yellow;
+    background-color: rgb(21, 23, 38);  
+    z-index: 3;
+}
+
