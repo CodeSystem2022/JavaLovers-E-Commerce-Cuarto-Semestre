@@ -14,69 +14,86 @@
 <body>
     <!--Header
     -->
-   <header class="nav-header">
-
-    <div class="nav-log">
-        <a href="/index.html" class="nav-logo"> Insanus Ludos</a>
-        <img src="/imagenes/Logo.png" alt="logo" class="nav-logo-img">
-    </div>
-
-    <!--Menu/Barra lateral(en patallas de menores tamaños)-->
-    <nav class="nav-menu">
-        <ul class="nav-menu-list">
-            <li class="nav-menu-item">
-                <a href="#" class="nav-menu-categories-link">Categorias <img src="/assets/caret-right-circle.svg" class="menu_arrow"></a>
-                <ul class="nav-menu-inside">
-                    <li class="nav-menu_inside-item">
-                        <a href="" class="menu_link_menu_link-inside">Accion</a>
-                    </li>
-                    <li class="nav-menu_inside-item">
-                        <a href="#" class="menu_link_menu_link-inside">Aventura</a>
-                    </li>
-                    <li class="nav-menu_inside-item">
-                        <a href="#" class="menu_link_menu_link-inside">Carreras</a>
-                    </li>
-                    <li class="nav-menu_inside-item">
-                        <a href="#" class="menu_link_menu_link-inside">Arcade </a>
-                    </li>
-                    <li class="nav-menu_inside-item">
-                        <a href="#" class="menu_link_menu_link-inside">Deportes</a>
-                    </li>
-                    <li class="nav-menu_inside-item">
-                        <a href="#" class="menu_link_menu_link-inside">Estrategia</a>
-                    </li>
-                    <li class="nav-menu_inside-item">
-                        <a href="#" class="menu_link_menu_link-inside">Rol</a>
-                    </li>
-                    <li class="nav-menu_inside-item">
-                        <a href="#" class="menu_link_menu_link-inside">Terror</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-menu-item">
-                <a href="#" class="nav-menu-item-link">Ventas</a>
-            </li>
-            <li class="nav-menu-item">
-                <a href="#" class="nav-menu-item-link">Ofertas</a>
-            </li>
-            <li class="nav-menu-item">
-                <a href="#" class="nav-menu-item-link">Contactos</a>
-            </li>
-            
-        </ul>
-    </nav>
-    <a href="#" title="Carrito" class="nav-cart" id="nav-cart"> 🛒</a>
- 
-    
+ <header class="nav-header">
+        <div class="nav-log">
+            <a href="/index.html" class="nav-logo"> Insanus Ludos</a>
+        </div>
+        <!--Menu/Barra lateral(en patallas de menores tamaños)-->
+        <nav class="nav-menu">
+            <ul class="nav-menu-list">
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-categories-link">Categorias <img src="/assets/caret-right-circle.svg" class="menu_arrow"></a>
+                    <ul class="nav-menu-inside">
+                        <li class="nav-menu_inside-item">
+                            <a href="" class="menu_link_menu_link-inside">Accion</a>
+                        </li>
+                        <li class="nav-menu_inside-item">
+                            <a href="#" class="menu_link_menu_link-inside">Arcade</a>
+                        </li>
+                        <li class="nav-menu_inside-item">
+                            <a href="#" class="menu_link_menu_link-inside">Aventura</a>
+                        </li>
+                        <li class="nav-menu_inside-item">
+                            <a href="#" class="menu_link_menu_link-inside">Carreras</a>
+                        </li>
+                        <li class="nav-menu_inside-item">
+                            <a href="#" class="menu_link_menu_link-inside">Deportes</a>
+                        </li>
+                        <li class="nav-menu_inside-item">
+                            <a href="#" class="menu_link_menu_link-inside">Estrategia</a>
+                        </li>
+                        <li class="nav-menu_inside-item">
+                            <a href="#" class="menu_link_menu_link-inside">Horror</a>
+                        </li>
+                        <li class="nav-menu_inside-item">
+                            <a href="#" class="menu_link_menu_link-inside">Multijugador Masivo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-item-link">Ventas</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-item-link">Ofertas</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-item-link">Contactos</a>
+                </li>
+               
+            </ul>
+        </nav>
+        <div class="nav-car">
+        <a href="#" title="Carrito" class="nav-cart" id="nav-cart"><img class="nav-cart-img" src="/assets/cart.svg" alt="carrito-bueno"></a>
+        </div>
+        <div class="menu__hamburguer">
+            <img src="/assets/menu-outline.svg" class="menu__img">
+        </div>
+       
    </header>
    <!--Iconos-->
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-   <!--script basico para la conexcion del html
-   -->
 
+   <!--script básico para la conexión del html
+   -->
    <script src="/js/index.js"></script>
+
+
+   <!--Imagen de propaganda de videojuegos-->
+   <div class="contenido-propaganda">
+        <div class="contenido-propaganda-img"></div>
+        <div class="contenido-propaganda-texto">
+            <div class="contenido-propaganda-texto-oferta">
+                <p class="contenido-propaganda-texto-oferta-1">!NO TE LO PIERDAS!</p>
+                <p class="contenido-propaganda-texto-oferta-2">OFERTAS SOLO POR 24 HORAS</p>
+                <p class="contenido-propaganda-texto-oferta-3">50% DE DESCUENTO</p>
+                <a href="#" class="contenido-propaganda-texto-oferta-link">Ver</a>
+            </div>
+        </div>
+
+
+   </div>
 
 
     <!--More Info-->
