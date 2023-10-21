@@ -135,4 +135,231 @@ body{
     background-color: rgb(21, 23, 38);  
     z-index: 3;
 }
+.nav-car{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.7rem;
+}
 
+.nav-cart{
+    /*no agregue nada aca es la caja del carrito*/
+}
+.menu__hamburguer{
+    height: 100%;
+    width: 0%;
+    background-color: aqua;
+    display: flex;
+    justify-content: end;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;/*esto se modifica con el query para pantallas menores*/
+}
+.menu__img{
+    background-color: aqua;
+    height: 36px;
+    width: 36px;
+}
+.nav-icon-chevron-up{
+    
+}
+/*Imagen de propaganda de video juegos*/
+.contenido-propaganda{
+    display: flex;
+    background-color: chartreuse;
+    height: 20rem;
+    width: 125rem;
+    margin: 2rem 1rem 3rem 1rem;
+    border-radius: 0.5rem;
+    opacity: 0.9;
+    transition: 0.2s;    
+    position: relative;
+}
+.contenido-propaganda:hover{
+    box-shadow: 0rem 0rem 0.1rem 0.1rem var(--green-fluor);
+    transition: 0.4s;
+}
+.contenido-propaganda-img{
+    background-color: aqua;
+    height: 100%;
+    width: 60%;
+    background-image: url(/Imagen-de-juegos-y-nombre/Descuento/descuento-troll.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    margin-right: 1rem;
+}
+.contenido-propaganda-texto{
+    padding: 3rem 7rem 0rem 3rem;
+    background-color: brown;
+    width: 40%;
+    height: 100%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contenido-propaganda-texto-oferta{
+    background-color: blueviolet;
+    text-align: start;
+    padding-left: 10rem;
+    height: 90%;
+}
+.contenido-propaganda-texto-oferta-1{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.contenido-propaganda-texto-oferta-2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.contenido-propaganda-texto-oferta-3{
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: bold;
+
+}
+.contenido-propaganda-texto-oferta-link{
+    font-family: 'Sofia Sans';
+    font-weight: 700;
+    color: var(--green-fluor);
+    letter-spacing: 0.05rem;
+    padding: 1rem 2rem 1rem 2rem;
+    text-decoration: none;
+    background-color: var(--dark-claro);
+    border-radius: 0.2rem;
+    transition: 0.2s;
+}
+.contenido-propaganda-texto-oferta-link:hover{
+    color: var(--dark);
+    padding: 1.2rem 2.2rem 1.2rem 2.2rem;
+    box-shadow: inset 0rem 3.6rem var(--green-osc),
+    0rem 0.3rem 0.3rem 0.3rem var(--green-fluor);
+    transition: 0.4s;
+}
+
+/*Seccion del juegos en ofertas*/
+.base-ar{
+    margin-left: 1rem;
+    background-color: brown;
+    opacity: 0.9;
+    height: 35rem;
+    width: 125rem;
+    border-radius: 0.5rem;/*despues sacarlo y revisar que quede bien*/
+}
+
+.base-ar:hover{
+    box-shadow: 0rem 0rem 0.1rem 0.1rem var(--green-fluor);
+    transition: 0.4s;
+}
+
+.base-tit{
+    background-color: blue;
+    padding: 0.5rem 1rem 0.2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem; 
+}
+.base-tit-st{
+    background-color: aqua;
+    
+}
+.base-ar-enlace{
+    background-color: blueviolet;
+    text-decoration: none;/*si da tiempo animar esto con un sonido no me gusta solo asi*/
+}
+.ar-base{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    
+}
+.articulo{
+    background-color: aqua;/*sacar tambien*/
+    height: 30rem;
+    width: 20rem;
+    border-radius: 0.7rem;/*sacar ya que no va a tener color el fondo*/
+    overflow: hidden;
+}
+.articulo-img{
+    background-color: blue;
+    height: 60%;
+    width: 100%;
+    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
+    transition: 0.3s;
+}
+.articulo-img:hover{
+    height: 100%;
+    transition: 0.4s;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    
+}
+.articulo-contenido{
+    height: 40%;
+    width: 100%;
+    
+}
+.articulo-contenido:hover{
+   
+}
+.articulo-contenido-titulo{
+    text-decoration: none;
+
+
+}
+
+.buttom-troll{
+    display: block;
+    text-align: center;
+    border-bottom: 0.1rem solid;
+    border-color: var(--dark);
+    font-size: 4rem;
+    background-color: aqua;
+}
+
+
+/*footer (Pie de pagina)*/
+.foote-re{
+    background-color: red;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0.9;
+    
+}
+
+.foote-reds{
+    background-color: aqua;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+.foote-help{
+    padding: 1rem;
+    background-color: black;
+    margin-top: 1rem;
+    text-align: center;
+    padding-bottom: 0;
+}
+.foote-enlace{
+    color: var(--green-fluor);
+    text-align: center;
+    text-decoration: none;
+    padding-left: 2rem;
+    transition-duration: 0.2s;
+    
+}
+.foote-enlace:hover{
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: var(--green-osc);
+    transition-duration: 0.4s;
+    transition-delay: 0.2s;
+}
