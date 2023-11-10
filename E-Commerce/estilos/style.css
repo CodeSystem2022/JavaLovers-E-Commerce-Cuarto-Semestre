@@ -2,11 +2,14 @@
 /*Paleta de colores*/
 :root{
     --dark:rgb(1, 1, 1);
+    --dark-tenue:rgb(8, 8, 8);
     --gris:rgb(112, 117, 112);
     --dark-claro: rgb(48, 51, 48);
     --green-osc:rgb(35, 114, 35);
     --gris-claro:rgb(195, 195, 195);
     --green-fluor:rgb(2, 227, 0);
+    --green-precios: rgb(14, 190, 23);
+    --naranja-des: rgba(255, 179, 38, 0.849);
 
 }
 *{
@@ -16,9 +19,10 @@
 }
 body{
     font-family: 'Sofia Sans';
-    border: 5px;
-    padding: 5px;
-    margin: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url(/imagenes/Logo.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,7 +30,7 @@ body{
     
 }
 .nav-header{
-    width: 125rem;
+    width: 95rem;
     height: 7rem;
     display: flex;
     margin-left: 1rem;
@@ -38,21 +42,20 @@ body{
     width: 10%;
     display: flex;
     justify-content: space-evenly;
+    /*border-right: 2px solid blue;*/
 }
 .nav-logo{
     margin-top: 1rem;
     padding-top: 2rem;/*como no se centraba como quiera lo centre a mi manera */
     text-align: center;
     text-decoration: none;
-    color: red;      
+    color: red;/*cabiar color y estilo de letra*/
 }
 
 .nav-menu{
     width: 80%;
     height: 100%;
     transition: transform .5s;
-    background-color: brown;
-    
 }
 .nav-menu-list{
     height: 100%;
@@ -62,7 +65,6 @@ body{
     justify-content: end;
 }
 .nav-menu-item{
-    background-color: aqua;
     list-style: none;
     position: relative;
     margin-top: 3rem;
@@ -77,10 +79,11 @@ body{
     --transform: rotate(90deg);
 }
 .nav-menu-categories-link{
-    background-color: blue;
+    
     text-decoration: none;
     color: var(--green-fluor);
     margin-left: 0.5rem;
+    padding: 0.7rem;
     
 }
 .nav-menu-categories-link:hover{
@@ -91,17 +94,17 @@ body{
     margin-left: 0.5rem;
     text-decoration: none;
     color: var(--green-fluor);
+    padding: 0.7rem;
 }
 .nav-menu-item-link:hover{
     background-color: var(--dark-claro);
     border-radius: 0.2rem;
 }
 .menu_arrow{
-    background-color: brown;
     margin-bottom: -0.3rem;
     height: 1.2rem;
     transform: var(--transform);
-    transition: transform 0.5s;
+    transition: transform 0.5s;/*para cambiarle el color a la flechita ir al archivo*/
 }
 /*est. de categorias*/
 .nav-menu-inside{
@@ -167,10 +170,9 @@ body{
 /*Imagen de propaganda de video juegos*/
 .contenido-propaganda{
     display: flex;
-    background-color: chartreuse;
     height: 20rem;
-    width: 125rem;
-    margin: 2rem 1rem 3rem 1rem;
+    width: 95rem;
+    margin: 2rem 1rem 2rem 1rem;
     border-radius: 0.5rem;
     opacity: 0.9;
     transition: 0.2s;    
@@ -181,15 +183,14 @@ body{
     transition: 0.4s;
 }
 .contenido-propaganda-img{
-    background-color: aqua;
     height: 100%;
     width: 60%;
-    background-image: url(/Imagen-de-juegos-y-nombre/Descuento/descuento-troll.jpg);
+    background-image: url(/Imagen-de-juegos-y-nombre/Juegos-ofertas/Descuento/descuento-troll.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 .contenido-propaganda-texto{
     padding: 3rem 7rem 0rem 3rem;
@@ -200,9 +201,8 @@ body{
     border-bottom-right-radius: 0.5rem;
 }
 .contenido-propaganda-texto-oferta{
-    background-color: blueviolet;
-    text-align: start;
-    padding-left: 10rem;
+    text-align: start;/*parte del 50% de decuento */
+    padding-left: 5rem;
     height: 90%;
 }
 .contenido-propaganda-texto-oferta-1{
@@ -216,7 +216,7 @@ body{
 .contenido-propaganda-texto-oferta-3{
     margin-bottom: 3rem;
     font-size: 1.5rem;
-    color: aliceblue;
+    color: aliceblue;/*color del 50% de descuento*/
     font-weight: bold;
 
 }
@@ -245,7 +245,7 @@ body{
     background-color: brown;
     opacity: 0.9;
     height: 35rem;
-    width: 125rem;
+    width: 95rem;
     border-radius: 0.5rem;/*despues sacarlo y revisar que quede bien*/
 }
 
@@ -263,12 +263,13 @@ body{
     border-top-left-radius: 0.5rem; 
 }
 .base-tit-st{
-    background-color: aqua;
+    font-size: 2rem;
     
 }
 .base-ar-enlace{
-    background-color: blueviolet;
+    background-color:red;
     text-decoration: none;/*si da tiempo animar esto con un sonido no me gusta solo asi*/
+    font-size: 1.5rem;
 }
 .ar-base{
     display: flex;
@@ -291,6 +292,11 @@ body{
     border-top-left-radius: 0.7rem;
     transition: 0.3s;
 }
+.articulo-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 .articulo-img:hover{
     height: 100%;
     transition: 0.4s;
@@ -308,14 +314,54 @@ body{
 }
 .articulo-contenido-titulo{
     text-decoration: none;
-
+    padding-top: 0.5rem;
+}
+.articulo-contenido-titulo-h1{
+    display: flex;
+    justify-content: center;
+}
+.articulo-contenido-pecio{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    color: var(--green-precios);
+    font-weight: 700 ;
+}
+.articulo-contenido-pecio del{
+    color: black;
+}
+.articulo-contenido-cuotas{
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: oblique;
+    color: var(--naranja-des);
 
 }
+.articulo-cont-btn{
+    display: flex;
+    
+    width: 100%;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.articulo-contenido-titulo-link{
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: var(--green-osc); /*a definir*/
+    border-radius: 0.7rem;
+}
+
+
+
+
+
 
 /*carrucel de 8 juegos*/
 .carrucel-cont{
     height: 26rem;
-    width: 120rem;
+    width: 95rem;
     margin: 2rem 3rem 3rem 1rem;
     border-radius: 0.5rem;
     margin: 4rem;
@@ -333,7 +379,7 @@ body{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     padding-top: 2rem;
-    margin-left: 6.7rem;
+    margin-left: 5.8rem;
     transition: all 0.5s ease;
     transform: translateX(0%);
     /*agregar dos imagenes en los costados para evitar usar grid*/
@@ -440,9 +486,8 @@ body{
 .boton1-avanzar{
     position: absolute;
     padding-top: 8rem;
-    top: 76.6rem;
-    left: 120rem;
-    
+    top: 73.4rem;
+    left: 100.5rem;
     width: 5rem;
     height: 15rem;
     border-top-right-radius: 0.5rem;
@@ -457,7 +502,7 @@ body{
 .boton1-retroceder{
     
     position: absolute;
-    top: 76.6rem;
+    top: 73.4rem;
     padding-top: 8rem;
     width: 5rem;
     height: 15rem;
@@ -511,7 +556,7 @@ body{
 /*Segundo carrucel*/
 .carrucel-categorias{
     height: 26rem;
-    width: 120rem;
+    width: 95rem;
     margin: 2rem 3rem 3rem 1rem;
     border-radius: 0.5rem;
     margin: 4rem;
@@ -550,57 +595,40 @@ body{
 .carrucel-conteiner-categorias-img{
     background-color: brown;
     width: 100%;
-    height: 60%;
-    object-fit: cover;
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
+    height: 100%;
+    
+    border-radius: 0.5rem;
+    
     
 }
-.carrucel-conteiner-categorias-text{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    height: 40%;
+.carrucel-conteiner-categorias-img a{
     width: 100%;
-    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
-.carrucel-conteiner-categorias-text:hover{
-    transition: 0.2s;
-    height: 50%;
 
-}
-.carrucel-conteiner-categorias-text-cont{
+.carrucel-categorias-img-scl{
     height: 100%;
     width: 100%;
-    background-color: aquamarine;
+    border-radius: 0.5rem;
+    
+    
+    
 }
-.carrucel-conteiner-categorias-text-cont h1{
-    margin-top: 0.2rem;
-    margin-bottom: 0;
-    height: 3.5rem;
-    background-color: beige;
-    color: rebeccapurple;/*cambiar color al de las letras del panel*/
-    text-align: start;
-    overflow: hidden;
-}
-.carrucel-precio-categorias{
-    background-color: burlywood;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 3rem;
-}
-.carrucel-categorias-enlace{
-    background-color: red;
-    height: 3rem;
-    /*opacity: 0;*/
-    transition: 0.4s;
-}
-.carrucel-categorias-enlace:hover{
-    opacity: 1;
+.carrucel-tit-categorias{
+    position: fixed;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: aqua;
+    
+    
+
 }
 
-.carrucel-enlace-categorias{
-}
+
 .puntos2{
     width: 100%;
     margin: 1em 0 0;
@@ -633,13 +661,14 @@ body{
 .boton-avanzar-categorias{
     position: absolute;
     padding-top: 8rem;
-    top: 117.5rem;
-    left: 120rem;
+    top: 114.2rem;
+    
+    left: 100.6rem;
     width: 5rem;
     height: 15rem;
     border-top-right-radius: 0.5rem;
     cursor: pointer;
-    opacity: 1;
+    opacity: 0;
     
 }
 .boton-avanzar-categorias:hover{
@@ -648,7 +677,7 @@ body{
 }
 .boton-retroceder-categorias{
     position: absolute;
-    top: 117.5rem;
+    top: 114.2rem;
     padding-top: 8rem;
     width: 5rem;
     height: 15rem;
@@ -802,6 +831,7 @@ body{
 
 /*footer (Pie de pagina)*/
 .foote-re{
+    width: 95rem;
     background-color: red;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -846,10 +876,12 @@ body{
 PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 */
 /*Encabezado de juegos*/
+
 .Head{
     display: flex;
+    
     height: 8rem;
-    width: 125rem;
+    width: 95rem;
     margin: 1rem 1rem 1rem 1rem;
 }
 .Head-cont{
@@ -913,8 +945,6 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
     height: 160rem;
     width: 75%;
     margin-bottom: 1rem;  
-    margin-left: 16rem;
-    
      
 }
 .art-juego-cont{
@@ -1201,8 +1231,129 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
     border: 0.2rem solid blue;
 }
 
+/*@media (max-width: 1328px){
+    body{
+        background-color: red;
+    }
+    /*body{
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-header{
+        width: 115rem;
+    }
+    .contenido-propaganda{
+        width: 115rem;
+    }
+    .base-ar{
+        width: 115rem;
+    }
+    .carrucel-cont{
+        width: 115rem;
+        }
 
-/* Media query para tablets */
+    .carrucel-categorias{
+        width: 115rem;
+    }
+    .foote-re{
+        width: 110rem;
+    }
+*/
+
+/*@media (max-width: 1024px) {
+    body{
+        background-color: aqua;
+    }
+    
+}
+@media (max-width: 768px){
+    body{
+        background-color: blanchedalmond;
+    }
+}
+@media (max-width: 480px){
+    body{
+        background-color: #4caf50;
+    }
+}
+@media (max-width: 0px){
+    body{
+        background-color: blueviolet;
+    }
+}*/
+/*
+@media (min-width: 1024px){
+    body{
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-header{
+        width: 60rem;
+    }
+    .contenido-propaganda{
+        width: 60rem;
+    }
+    .contenido-propaganda-texto-oferta{
+        padding-left: 1rem;
+    }
+    .contenido-propaganda-texto-oferta-1{
+        font-size: 1rem;
+    }
+    .contenido-propaganda-texto-oferta-2{
+        font-size: 1rem;
+    }
+    .contenido-propaganda-texto-oferta-3{
+        font-size: 1rem;
+    }
+    .base-ar{
+        width: 60rem;
+        height: 25rem;
+    }
+    .ar-base{
+        height: 20rem;
+        width: 100%;
+    }
+    .articulo{
+        height: 20rem;
+        width: 12rem;
+    }
+    .carrucel-cont{
+        width: 60rem;
+        margin: 1rem;
+        }
+
+    .carrucel-categorias{
+        width: 60rem;
+    }
+
+
+
+    .carrucel-conteiner-juego-cont{
+        width: 12rem;
+        height: 17rem;
+    }
+
+
+
+
+    .carrucel-conteiner-categorias{
+        width: 12rem;
+        height: 17rem;
+    }
+    .foote-re{
+        width: 60rem;
+    }
+}*/
+
+/* Media query para tablets no es tan necesario
 @media (max-width: 768px) {
     h1 {
         font-size: 20px;
@@ -1210,4 +1361,6 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
     p {
         font-size: 14px;
     }
-}
+}*/
+
+/* Media query para teléfonos móviles 
