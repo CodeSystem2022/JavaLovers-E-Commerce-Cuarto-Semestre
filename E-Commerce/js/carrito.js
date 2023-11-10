@@ -137,6 +137,12 @@ function renderCardCarritoTotal() {
   });
 }
 
+// Función para realizar el pago
+function realizarPago() {               
+    console.log("Procesando pago...");
+    procesarPago(carrito, totalPrecioCarritos());
+}
+
 function MostrarCardTotal() {
   //Esta funcion muestra una seccion con el calculo
   //total y subtotal de los juegos añadidos en le LocalStorage
@@ -144,6 +150,12 @@ function MostrarCardTotal() {
   cardTotal.innerHTML = "";
   if (localStorage.getItem("carrito")) {
     renderCardCarritoTotal();
+    
+  const botonPago = document.createElement("button");
+  botonPago.innerText = "Realizar Pago";
+  botonPago.onclick = realizarPago;
+  cardTotal.appendChild(botonPago);
+   
   }
 }
 function EjecutarVistaDeCarritoCompleta() {
