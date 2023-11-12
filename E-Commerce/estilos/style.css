@@ -2346,63 +2346,67 @@ body {
   }
 
   .Head {
-    width: 55rem;
+    width: 25rem;
+    height: 5rem;
   }
   .Head-cont {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
   }
   .Head-cont-inicio-scl {
-    background-color: var(--dark-tenue);
-    color: var(--green-fluor);
-    font-weight: bold;
   }
   .Head-cont-Todas-scl {
-    background-color: var(--dark-tenue);
-    color: var(--green-fluor);
   }
   .Head-cont-retroceder-scl {
-    background-color: var(--dark-tenue);
-    color: var(--green-fluor);
-    border-right: 1px solid var(--green-fluor);
   }
 
   /*modificando los tamaños de grid es reponsivo pero las letras y algunas otras cosas no*/
   .art-juego {
-    height: 150rem;
+    height: 90rem;
   }
   .art-juego-cont-tit {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .art-juego-cont-descrip-cont-text {
-    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 0.9rem;
   }
   .art-juego-tit-categorias h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .art-juego-cont-enlaces-cont {
     grid-template-columns: repeat(2, 1fr);
   }
   .art-juego-cont-estrellas-escala-1 {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
   }
   .estr-black img {
-    height: 0.8rem;
-    width: 0.8rem;
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+  .art-juegos-cont-estrellas-img-1 {
+    padding: 0.2rem;
+    box-shadow: 1px 2px 1px 3px rgba(0, 0, 0, 0.5),
+      inset 5px 5px 1px rgba(255, 255, 255, 0.1),
+      -4px -4px 5px rgba(255, 255, 255, 0.1),
+      inset -2px -2px 6px rgba(0, 0, 0, 0.75);
   }
   .art-juego-cont-btn-comprar a {
-    padding: 1rem 2rem 1rem 2rem;
-    margin-left: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 1rem;
   }
   .art-juego-carrucel-cont {
-    width: 37rem;
+    width: 20rem;
+    height: 10rem;
     margin-top: 2rem;
   }
   .art-juego-cont-req-min-tit {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .art-juego-cont-req-min-rm {
-    font-size: 1.1rem;
+    font-size: 0.7rem;
+    padding-left: 0.1rem;
+    padding-bottom: 0.2rem;
   }
   .Doon {
     height: 15;
@@ -2414,93 +2418,4 @@ body {
   .art-juego-cont-req-max-rm {
     font-size: 1.1rem;
   }
-  /* Pag. de Ayuda*/
-  /* Tambien de la pag. de defensa al consumidor*/
-  .documento {
-            max-width: 760px;
-            margin: 0 auto;
-            border: none;
-            padding: unset;
-  }
-  .documento__header {
-            text-align: center;
-            padding: 44px 0 52px;
-            margin: unset;
-  }
-  .documento__title {
-            font-weight: 700;
-            letter-spacing: .01em;
-            margin: 0;
-  }
-  .card {
-            background-color: #fff;
-            box-shadow: 0 1px 3px rgba(0,0,0,.09);
-            border: none;
-            border-radius: 0;
-  }
-  body {
-            background: #463b3b;
-  }
-  .typography p {
-            font-size: 16px;
-            font-family: arial ,sans-serif ;
-            white-space: pre-wrap;
-  }
-  h1 {
-            font-size: 40px;
-            font-family: Helvetica, Arial, sans-serif;
-            text-transform: capitalize;
-            text-shadow: 1px 1px 1px rgb(15, 63, 37);
-  }
-  h2 {
-          font-size: 30px;
-         
-  }
-  h3{
-         font-size: 25px;
-        font-family: calibri
-  }
-  h5{
-        font-size: 20px;
-  }
-  .documento__content {
-            padding: 50px;
-  }
-  /*Pagina de politica*/
-  .document {
-            max-width: 760px;
-            margin: 0 auto;
-            border: none;
-            padding: unset;
-        }
-  .document__header {
-            text-align: center;
-            padding: 44px 0 52px;
-            margin: unset;
-        }
-  .document__title {
-            font-weight: 700;
-            letter-spacing: .01em;
-            margin: 0;
-        }
-  .card {
-            background-color: #fff;
-            box-shadow: 0 1px 3px rgba(0,0,0,.09);
-            border: none;
-            border-radius: 0;
-        }
-  body {
-            background: #443e3e;
-        }
-  .typography p {
-            font-size: .9rem;
-            white-space: pre-wrap;
-        }
-  h1 {
-            font-size: 40px;
-        }
-  .document__content {
-            padding: 50px;
-        }
-   
 }
