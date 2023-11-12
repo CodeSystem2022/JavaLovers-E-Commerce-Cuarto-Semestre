@@ -524,11 +524,11 @@ body {
 
 .buttom-troll {
   /*display: block;
-  text-align: center;
-  border-bottom: 0.1rem solid;
-  border-color: var(--dark);
-  font-size: 4rem;
-  background-color: aqua;*/
+    text-align: center;
+    border-bottom: 0.1rem solid;
+    border-color: var(--dark);
+    font-size: 4rem;
+    background-color: aqua;*/
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -572,10 +572,10 @@ body {
   width: 200%;
   height: 20rem;
   /*display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  padding: 2rem 2rem 2rem 0rem;
-  margin-top: 1rem;*/
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding: 2rem 2rem 2rem 0rem;
+    margin-top: 1rem;*/
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   padding-top: 2rem;
@@ -876,8 +876,8 @@ body {
 }
 
 /*
-PARTE DEL ESTILO DE JUEGO INDIVIDUAL
-*/
+  PARTE DEL ESTILO DE JUEGO INDIVIDUAL
+  */
 /*Encabezado de juegos*/
 
 .Head {
@@ -892,6 +892,7 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  font-size: 3rem;
 }
 .Head-cont-retroceder {
   height: 100%;
@@ -899,7 +900,9 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 }
 .Head-cont-retroceder-scl {
   display: flex;
-  background-color: aqua;
+  background-color: var(--dark-tenue);
+  color: var(--green-fluor);
+  border-right: 1px solid var(--green-fluor);
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -915,7 +918,9 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 }
 .Head-cont-Todas-scl {
   display: flex;
-  background-color: burlywood;
+  background-color: var(--dark-tenue);
+  color: var(--green-fluor);
+  border-right: 1px solid var(--green-fluor);
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -929,18 +934,19 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 }
 .Head-cont-inicio-scl {
   display: flex;
-  background-color: green;
+  background-color: var(--dark-tenue);
+  color: var(--green-fluor);
   height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid red;
+
   text-decoration: none;
   border-bottom-right-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 .art-juego {
-  background-color: aqua;
+  background-color: var(--dark-tenue);
   height: 160rem;
   width: 75%;
   margin-bottom: 1rem;
@@ -948,7 +954,7 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 .art-juego-cont {
   height: 100%;
   width: 100%;
-  background-color: blueviolet;
+  background-color: var(--gris-fondo);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(13, 1fr);
@@ -968,12 +974,14 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 .art-juego-cont-tit {
   grid-column: 1/5;
   grid-row: 5/6;
-  border-top: 2px solid red;
+  border-top: 2px solid var(--green-fluor);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+  background-color: var(--dark-tenue);
   font-size: 3rem;
+  color: var(--green-fluor);
+  border-bottom: 2px solid var(--green-fluor);
 }
 
 .art-juego-cont-descrip {
@@ -981,26 +989,29 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   grid-row: 6/8;
   height: 100%;
   width: 100%;
-  background-color: bisque;
+  background-color: var(--dark-claro);
   text-align: justify;
-  border-bottom: 0.2rem solid red;
+  border-bottom: 0.2rem solid var(--green-fluor);
 }
 .art-juego-cont-descrip-cont-text {
   font-size: 2rem;
   padding: 4rem 4rem 4rem 4rem;
+  color: var(--green-fluor);
 }
 .art-juego-cont-enlaces {
   grid-column: 1/2;
   grid-row: 8/9;
-  background-color: beige;
+  background-color: var(--gris-fondo);
 }
 .art-juego-tit-categorias {
   width: 100%;
   height: 20%;
   display: flex;
-  background-color: aquamarine;
+  background-color: var(--gris-fondo);
   justify-content: center;
   align-items: center;
+  color: var(--green-fluor);
+  border-right: 2px solid var(--green-fluor);
 }
 .art-juego-tit-categorias h3 {
   font-size: 2rem;
@@ -1011,11 +1022,13 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background-color: cadetblue;
+  background-color: var(--dark-claro);
   gap: 10px;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1rem;
+  border-bottom: 2px solid var(--green-fluor);
+  border-right: 2px solid var(--green-fluor);
 }
 .art-juego-cont-enlaces-cont-link {
   text-decoration: none;
@@ -1024,13 +1037,14 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   align-items: center;
   transition: 0.4s;
   font-size: 1.2rem;
-  border: 0.2rem solid red;
+  border: 0.2rem solid var(--green-fluor);
   border-radius: 0.7rem;
+  color: var(--green-fluor);
 }
 .art-juego-cont-enlaces-cont-link:hover {
-  color: brown;
-  background-color: aqua;
-  color: burlywood;
+  color: var(--dark);
+  background-color: var(--green-osc);
+  color: var(--dark);
   border-color: black;
 }
 
@@ -1040,16 +1054,18 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 }
 .art-juego-cont-estrellas-img {
   width: 100%;
-  height: 50%;
-  background-color: red;
+  height: 80%;
+  background-color: var(--dark-claro);
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: start;
+  padding-top: 1rem;
+  border-bottom: 2px solid var(--green-fluor);
 }
 .art-juegos-cont-estrellas-img-1 {
-  border: 0.2rem solid blue;
+  border: 0.2rem solid var(--dark);
   border-radius: 0.5rem;
-  background-color: aqua;
+  background-color: var(--green-fluor);
   padding: 1rem;
   box-shadow: 4px 5px 3px 5px rgba(0, 0, 0, 0.5),
     inset 15px 15px 3px rgba(255, 255, 255, 0.1),
@@ -1059,11 +1075,13 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 .art-juego-cont-estrellas-escala {
   display: flex;
   justify-content: center;
-  background-color: aqua;
+  background-color: var(--gris-fondo);
   padding-top: 0.5rem;
   font-size: 1.3rem;
   height: 20%;
   width: 100%;
+  border-right: 2px solid var(--green-fluor);
+  color: var(--green-fluor);
 }
 .estr-black img {
   height: 1.8rem;
@@ -1074,12 +1092,13 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 .art-juego-cont-btn-comprar {
   grid-column: 3/5;
   grid-row: 8/9;
-  background-color: azure;
+  background-color: var(--gris-fondo);
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
+  border-bottom: 2px solid var(--green-fluor);
 }
 .art-juego-cont-btn-comprar img {
   height: 100%;
@@ -1091,12 +1110,14 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   text-align: center;
   padding: 2rem 4rem 2rem 4rem;
   margin-left: 5rem;
-  background-color: aqua;
+  background-color: var(--dark);
   border-radius: 0.5rem;
   transition: 0.4 ease-in-out;
+  color: var(--green-fluor);
 }
 .art-juego-cont-btn-comprar a:active {
-  background-color: blueviolet;
+  background-color: var(--green-fluor);
+  color: var(--dark);
 }
 .art-juego-cont-btn-comprar div {
   display: flex;
@@ -1104,8 +1125,11 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 }
 .art-juego-cont-btn-comprar div h4 {
   margin-left: 5rem;
+  margin-top: 1rem;
+  color: var(--green-fluor);
 }
 
+/**/
 .art-juego-carrucel-cont-celular {
   grid-column: 1/5;
   grid-row: 9/11;
@@ -1125,7 +1149,7 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   border-radius: 5px;
   scroll-snap-align: center;
 }
-
+/*carrucel de pc remplazar por el de celular despues*/
 .art-juego-carrucel {
   grid-column: 1/5;
   grid-row: 9/11;
@@ -1133,7 +1157,7 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   width: 100%;
   display: flex;
   justify-content: center;
-  border-bottom: 0.2rem solid red;
+  border-bottom: 0.2rem solid var(--green-fluor);
 }
 .art-juego-carrucel-cont {
   height: 21rem;
@@ -1159,9 +1183,10 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 .art-juego-cont-req-min {
   grid-column: 1/3;
   grid-row: 11/14;
-  background-color: aqua;
+  background-color: var(--gris-fondo);
   display: flex;
   flex-direction: column;
+  color: var(--green-fluor);
 }
 .art-juego-cont-req-min-tit {
   text-align: center;
@@ -1179,7 +1204,7 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   transition: 0.2s;
 }
 .art-juego-cont-req-min-rm div:hover {
-  color: aquamarine;
+  color: var(--naranja-des);
 }
 .Doon {
   height: 25rem;
@@ -1188,9 +1213,10 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
 .art-juego-cont-req-max {
   grid-column: 3/5;
   grid-row: 11/14;
-  background-color: olive;
+  background-color: var(--gris-fondo);
   display: flex;
   flex-direction: column;
+  color: var(--green-fluor);
 }
 .art-juego-cont-req-max-tit {
   text-align: center;
@@ -1208,12 +1234,12 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   transition: 0.2s;
 }
 .art-juego-cont-req-max-rm div:hover {
-  color: aquamarine;
+  color: var(--naranja-des);
 }
 .art-juego-cont-req-borde {
-  background-color: red;
+  background-color: var(--dark-tenue);
   margin: 2rem 2rem 2rem 2rem;
-  border: 0.2rem solid blue;
+  border: 0.2rem solid var(--green-fluor);
 }
 
 /*Inicio del media query*/
@@ -1311,10 +1337,10 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
     font-size: auto;
   }
   /*.carrucel-conteiner-enlace:hover {
-    width: 100%;
-    height: 4rem;
-    text-align: center;
-  }*/
+      width: 100%;
+      height: 4rem;
+      text-align: center;
+    }*/
 }
 /*Segundo media query*/
 
@@ -1610,6 +1636,77 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   }
   .carrucel-enlace-juego-cat {
     font-size: auto;
+  }
+
+  /*JUEGO INDIVIDUAL*/
+  .Head {
+    width: 55rem;
+  }
+  .Head-cont {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .Head-cont-inicio-scl {
+    background-color: var(--dark-tenue);
+    color: var(--green-fluor);
+    font-weight: bold;
+  }
+  .Head-cont-Todas-scl {
+    background-color: var(--dark-tenue);
+    color: var(--green-fluor);
+  }
+  .Head-cont-retroceder-scl {
+    background-color: var(--dark-tenue);
+    color: var(--green-fluor);
+    border-right: 1px solid var(--green-fluor);
+  }
+
+  /*modificando los tamaños de grid es reponsivo pero las letras y algunas otras cosas no*/
+  .art-juego {
+    height: 150rem;
+  }
+  .art-juego-cont-tit {
+    font-size: 2rem;
+  }
+  .art-juego-cont-descrip-cont-text {
+    font-size: 1.5rem;
+  }
+  .art-juego-tit-categorias h3 {
+    font-size: 1.5rem;
+  }
+  .art-juego-cont-enlaces-cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .art-juego-cont-estrellas-escala-1 {
+    font-size: 1.2rem;
+  }
+  .estr-black img {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  .art-juego-cont-btn-comprar a {
+    padding: 1rem 2rem 1rem 2rem;
+    margin-left: 2rem;
+  }
+  .art-juego-carrucel-cont {
+    width: 37rem;
+    margin-top: 2rem;
+  }
+  .art-juego-cont-req-min-tit {
+    font-size: 2rem;
+  }
+  .art-juego-cont-req-min-rm {
+    font-size: 1.1rem;
+  }
+  .Doon {
+    height: 15;
+    width: 15;
+  }
+  .art-juego-cont-req-max-tit {
+    font-size: 2.2rem;
+  }
+  .art-juego-cont-req-max-rm {
+    font-size: 1.1rem;
   }
 }
 
@@ -2246,5 +2343,75 @@ PARTE DEL ESTILO DE JUEGO INDIVIDUAL
   }
   .carrucel-enlace-juego-cat {
     font-size: auto;
+  }
+
+  .Head {
+    width: 55rem;
+  }
+  .Head-cont {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .Head-cont-inicio-scl {
+    background-color: var(--dark-tenue);
+    color: var(--green-fluor);
+    font-weight: bold;
+  }
+  .Head-cont-Todas-scl {
+    background-color: var(--dark-tenue);
+    color: var(--green-fluor);
+  }
+  .Head-cont-retroceder-scl {
+    background-color: var(--dark-tenue);
+    color: var(--green-fluor);
+    border-right: 1px solid var(--green-fluor);
+  }
+
+  /*modificando los tamaños de grid es reponsivo pero las letras y algunas otras cosas no*/
+  .art-juego {
+    height: 150rem;
+  }
+  .art-juego-cont-tit {
+    font-size: 2rem;
+  }
+  .art-juego-cont-descrip-cont-text {
+    font-size: 1.5rem;
+  }
+  .art-juego-tit-categorias h3 {
+    font-size: 1.5rem;
+  }
+  .art-juego-cont-enlaces-cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .art-juego-cont-estrellas-escala-1 {
+    font-size: 1.2rem;
+  }
+  .estr-black img {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  .art-juego-cont-btn-comprar a {
+    padding: 1rem 2rem 1rem 2rem;
+    margin-left: 2rem;
+  }
+  .art-juego-carrucel-cont {
+    width: 37rem;
+    margin-top: 2rem;
+  }
+  .art-juego-cont-req-min-tit {
+    font-size: 2rem;
+  }
+  .art-juego-cont-req-min-rm {
+    font-size: 1.1rem;
+  }
+  .Doon {
+    height: 15;
+    width: 15;
+  }
+  .art-juego-cont-req-max-tit {
+    font-size: 2.2rem;
+  }
+  .art-juego-cont-req-max-rm {
+    font-size: 1.1rem;
   }
 }
