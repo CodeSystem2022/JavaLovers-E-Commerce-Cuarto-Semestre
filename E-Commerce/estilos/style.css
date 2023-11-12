@@ -2423,6 +2423,7 @@ body {
 
  /* Pag. de Ayuda*/
   /* Tambien de la pag. de defensa al consumidor*/
+/*Pagina de politica*/
   .documento {
             max-width: 760px;
             margin: 0 auto;
@@ -2473,41 +2474,5 @@ body {
   .documento__content {
             padding: 50px;
   }
-  /*Pagina de politica*/
-  .document {
-            max-width: 760px;
-            margin: 0 auto;
-            border: none;
-            padding: unset;
-        }
-  .document__header {
-            text-align: center;
-            padding: 44px 0 52px;
-            margin: unset;
-        }
-  .document__title {
-            font-weight: 700;
-            letter-spacing: .01em;
-            margin: 0;
-        }
-  .card {
-            background-color: #fff;
-            box-shadow: 0 1px 3px rgba(0,0,0,.09);
-            border: none;
-            border-radius: 0;
-        }
-  body {
-            background: #443e3e;
-        }
-  .typography p {
-            font-size: .9rem;
-            white-space: pre-wrap;
-        }
-  h1 {
-            font-size: 40px;
-        }
-  .document__content {
-            padding: 50px;
-        }
-
+  
 }
