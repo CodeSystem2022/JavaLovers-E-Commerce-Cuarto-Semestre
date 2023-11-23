@@ -2468,7 +2468,7 @@
    /* Pag. de Ayuda*/
     /* Tambien de la pag. de defensa al consumidor*/
   /*Pagina de politica*/
-   /* .documento {
+    .documento {
               max-width: 760px;
               margin: 0 auto;
               border: none;
@@ -2490,20 +2490,20 @@
               border: none;
               border-radius: 0;
     }
-    body {
+   /* body {
               background: #463b3b;
-    }
+    }*/
     .typography p {
               font-size: 16px;
               font-family: arial ,sans-serif ;
               white-space: pre-wrap;
     }
     h1 {
-              font-size: 40px;
+              /*font-size: 40px;
               font-family: Helvetica, Arial, sans-serif;
               text-transform: capitalize;
-              text-shadow: 1px 1px 1px rgb(15, 63, 37);
-    }
+              text-shadow: 1px 1px 1px rgb(15, 63, 37);*/
+    }/*
     h2 {
             font-size: 30px;
   
@@ -2514,7 +2514,7 @@
     }
     h5{
           font-size: 20px;
-    }
+    }*/
     .documento__content {
               padding: 50px;
     }
