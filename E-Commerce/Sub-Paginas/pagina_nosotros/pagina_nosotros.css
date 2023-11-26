@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    background-image: url("C:\Users\carri\OneDrive\Escritorio\pagina_nosotros\imagenes\imagen_jostick2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    }
+  
+  header {
+    background-color: #333333;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nosotros {
+    padding: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer {
+    background-color: #444444;
+    padding: 1rem;
+  }
+  
